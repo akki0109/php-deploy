@@ -9,7 +9,7 @@ services:
             - db
         volumes:
             - ./php/src:/var/www/html/
-            - ./:/etc/apache2/sites-available/
+            - ./php/conf:/etc/apache2/sites-available/
         ports:
             - 8000:80
     db:
